@@ -1,0 +1,314 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>layuiAdmin 控制台主页一</title>
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<link rel="stylesheet" href="../../layuiadmin/layui/css/layui.css"
+	media="all">
+<link rel="stylesheet" href="../../layuiadmin/style/admin.css"
+	media="all">
+</head>
+<body >
+	<div style="padding: 15px;">
+		<!-- 表单测试 -->
+		<form class="layui-form" action="">
+			<div class="layui-form-item">
+				<label class="layui-form-label">姓名</label>
+				<div class="layui-input-block">
+					<input type="text" name="name" required lay-verify="required|name"
+						placeholder="请输入姓名" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">身份证号码</label>
+				<div class="layui-input-block">
+					<input type="text" name="cardId" required lay-verify="required|cardId"
+						placeholder="请输入身份证号码" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">性别</label>
+				<div class="layui-input-block">
+					<input type="radio" name="sex" value="1" title="男"> <input
+						type="radio" name="sex" value="2" title="女" checked>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">职位名称</label>
+				<div class="layui-input-block">
+					<select name="status" lay-verify="required">
+						<option value=""></option>
+						<option value="管理员">管理员</option>
+						<option value="普通用戶">普通用戶</option>
+					</select>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">学历</label>
+				<div class="layui-input-block">
+					<input type="text" name="education" required lay-verify="required|education"
+						placeholder="请输入学历" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+
+			<div class="layui-form-item">
+				<label class="layui-form-label">邮箱</label>
+				<div class="layui-input-block">
+					<input type="text" name="email" required lay-verify="required|email"
+						placeholder="请输入邮箱" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">手机号码</label>
+				<div class="layui-input-block">
+					<input type="text" name="phone" required lay-verify="required|phone"
+						placeholder="请输入手机号码" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">电话号码</label>
+				<div class="layui-input-block">
+					<input type="text" name="tel" required lay-verify="required|tel"
+						placeholder="请输入电话号码" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">政治面貌</label>
+				<div class="layui-input-block">
+					<input type="text" name="party" required lay-verify="required|party"
+						placeholder="请输入政治面貌" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">QQ号码</label>
+				<div class="layui-input-block">
+					<input type="text" name="qqNum" required lay-verify="required|qqNum"
+						placeholder="请输入QQ号码" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">联系地址</label>
+				<div class="layui-input-block">
+					<input type="text" name="address" required lay-verify="required|address"
+						placeholder="请输入联系地址" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">邮政编码</label>
+				<div class="layui-input-block">
+					<input type="text" name="postCode" required lay-verify="required|postCode"
+						placeholder="请输入邮编" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<!-- 出生日期 -->
+
+			<div class="layui-form-item">
+				<label class="layui-form-label">出生日期</label>
+				<div class="layui-input-block">
+					<input type="text" name="birthday" id="birthday"  required lay-verify="required"
+						placeholder="请输入出生日期" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+
+
+			<div class="layui-form-item">
+				<label class="layui-form-label">民族</label>
+				<div class="layui-input-block">
+					<input type="text" name="pace" required lay-verify="required|pace"
+						placeholder="请输入民族" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">专业</label>
+				<div class="layui-input-block">
+					<input type="text" name="speciality" required lay-verify="required|speciality"
+						placeholder="请输入专业" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">爱好</label>
+				<div class="layui-input-block">
+					<input type="text" name="hobby" required lay-verify="required|habby"
+						placeholder="请输入爱好" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">备注</label>
+				<div class="layui-input-block">
+					<input type="text" name="remark" required lay-verify="required|remark"
+						placeholder="请输入备注" autocomplete="off" class="layui-input">
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">部门名称</label>
+				<div class="layui-input-block">
+					<select name="deptId" id="dep" lay-verify="required">
+						<option></option>
+					</select>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<label class="layui-form-label">职位名称</label>
+				<div class="layui-input-block">
+					<select name="jobId" id="job" lay-verify="required">
+						<option></option>
+					</select>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-input-block">
+					<button class="layui-btn" lay-submit lay-filter="formDemo">添加</button>
+					<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script src="../../layuiadmin/jquery.js"></script>
+<script src="../../layuiadmin/layui/layui.js"></script>
+<script>
+			$(document).ready(function(){
+					 $.ajax({
+				        	type: "POST",
+				        	headers: {'Content-type': 'application/json;charset=UTF-8'},
+				        	url: 'http://172.18.20.57:10086/csi/dept/queryDept',
+				        	success: function(res) {
+				        		setSelect(res.data, 'dep');
+				        		setJob();			        		 		
+				        	}
+				        });
+					 	
+					});
+				function setSelect(data, id) {
+		            for (var i = 0; i < data.length; i++) {
+		                //先创建好select里面的option元素
+		                var option = document.createElement("option");
+		                //转换DOM对象为JQ对象,好用JQ里面提供的方法 给option的value赋值
+		                $(option).val(data[i].id);
+		                //给option的text赋值,这就是你点开下拉框能够看到的东西
+		                $(option).text(data[i].name);
+		                //获取select 下拉框对象,并将option添加进select
+		                $('#'+id).append(option);
+		            }
+				}	
+				
+				function setJob() {
+					 $.ajax({
+				        	type: "POST",
+				        	headers: {'Content-type': 'application/json;charset=UTF-8'},
+				        	url: 'http://172.18.20.57:10086/csi/job/queryJob',
+				        	success: function(res) {
+				        		setSelect(res.data, 'job');
+				        		setForm();				        		 		
+				        	}
+				        });
+				}
+				
+				function setForm() {
+					layui.use('form', function() {
+	        			var form = layui.form;
+	        			var $ = layui.$;
+	        			
+	        			form.verify({
+	   					 name: function (value) {
+	   			                //value：表单的值、item：表单的DOM对象
+	   			                if (!new RegExp("^.{1,20}$").test(value)) {
+	   			                    return '姓名长度必须为1-20位'
+	   			                }
+	   			            },
+	   			            cardId: [
+	   			            	/^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$|^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/,
+	   			                '请输入正确的身份证件号！'
+	   			            ],
+	   			            education: function (value) {
+	   			                //value：表单的值、item：表单的DOM对象
+	   			               if (!new RegExp("^.{1,10}$").test(value)) {
+	   			                    return '学历字段长度必须为1-10位'
+	   			                }		        
+	   			            },
+	   			            tel: function(value) {
+	   			            	if (!new RegExp("^.{7,19}$").test(value) &&
+	   			            			!new RegExp("^[0,9]*$").test(value)) {
+	   			                    return '电话只能是7-16个数字'
+	   			                }
+	   			            },
+	   			            party: function(value) {
+	   			            	if (!new RegExp("^.{1,10}$").test(value)) {
+	   			                    return '政治面貌字段长度必须为1-10位'
+	   			                }
+	   			            },
+	   			            qqNum: function(value) {
+	   			            	if (!new RegExp("/^[1-9][0-9]{4,9}$/gim").test(value)) {
+	   			                    return '请输入正确的QQ号码'
+	   			                }
+	   			            },
+	   			            address: function(value) {
+	   			            	if (!new RegExp("^.{1,50}$").test(value)) {
+	   			                    return '地址字段长度必须为1-50位'
+	   			                }
+	   			            },
+	   			            postCode: function(value) {
+	   			            	if (!new RegExp("^.{1,50}$").test(value)) {
+	   			                    return '邮政编码字段长度必须为1-50位'
+	   			                }
+	   			            },
+	   			            pace: function(value) {
+	   			            	if (!new RegExp("^.{1,100}$").test(value)) {
+	   			                    return '民族字段长度必须为1-100位'
+	   			                }
+	   			            },
+	   			            speciality: function(value) {
+	   			            	if (!new RegExp("^.{1,20}$").test(value)) {
+	   			                    return '专业字段长度必须为1-20位'
+	   			                }
+	   			            },
+	   			            hobby: function(value) {
+	   			            	if (!new RegExp("^.{1,100}$").test(value)) {
+	   			                    return '爱好字段长度必须为1-100位'
+	   			                }
+	   			            },
+	   			            remark: function(value) {
+	   			            	if (!new RegExp("^.{1,100}$").test(value)) {
+	   			                    return '备注字段长度必须为1-100位'
+	   			                }
+	   			            },
+	   			        });
+	        			
+	        			//监听提交
+	        			form.on('submit(formDemo)', function(data) {
+	        				data.field.birthday=new Date(Date.parse(data.field.birthday.replace('年','-').replace('月','-').replace('日','')));
+	        				 $.ajax({
+	        			        	type: "POST",
+	        			        	headers: {'Content-type': 'application/json;charset=UTF-8'},
+	        			        	url: 'http://172.18.20.57:10086/csi/employee/addEmployee',
+	        			        	data: JSON.stringify(data.field),
+	        			        	success: function(res) {
+	        			        		layer.msg(res.msg)
+	        			        	}
+	        			        });
+	        			
+	        				return false;
+	        			});
+	        		});     
+				}
+				
+				layui.use('laydate', function(){
+					  var laydate = layui.laydate;
+					  
+					  //执行一个laydate实例
+					  laydate.render({
+					    elem: '#birthday' //指定元素
+					    , format: 'yyyy年MM月dd日'
+					    ,min: '1888-8-11 12:30:00'
+					   	,max: 0
+					  });
+					});
+		</script>
+</body>
+</html>
+
